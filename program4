@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+	double kms=0.0,miles=0.0;
+	printf("Enter the distance in km:\n");
+	scanf("%lf",&kms);
+	printf("Enter the distance in miles:\n");
+	scanf("%lf",&miles);
+	double resmiles=0.621371192*kms;
+	double reskms=miles/0.621371192;
+	printf("Result in miles from km: %lf\n",resmiles);
+	printf("Result in kms from miles: %lf\n",reskms);
+	    return 0;
+	    
+}
