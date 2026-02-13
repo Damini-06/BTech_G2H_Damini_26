@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+	int n;
+	printf("Enter the number of days:");
+	scanf("%d",&n);
+	int y=n/365;
+	int m1=(n%365)/30;
+	int m2=y*12;
+	int m=m1+m2;
+	int remDays=(n%365)%30;
+	printf("No. of years: %d\n",y);
+	printf("No. of months: %d\n",m);
+	printf("No. of days: %d\n",remDays);
+}
+
