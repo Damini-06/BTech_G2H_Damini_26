@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    int a,b,c;
+    printf("Enter the coefficients of quadratic equations:\n");
+    scanf("%d %d %d",&a ,&b, &c);
+    double d= b*b-4*a*c;
+    if(d>=0)
+    {
+        double root1=(-b+sqrt(d))/(2*a);
+        double root2=(-b-sqrt(d))/(2*a);
+        printf("Roots are: %lf & %lf \n", root1,root2);
+    }
+    else
+    {
+        double realPart=-b/(2*a);
+        double imgPart=sqrt(-d)/(2*a);
+        printf("root1: %lf + %lfi \n",realPart,imgPart);
+        printf("root2: %lf - %lfi \n",realPart,imgPart);
+    }
+}
+
