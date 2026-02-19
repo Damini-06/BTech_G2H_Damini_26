@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+	int tempC,tempf;
+	printf("Enter the temperature in Centigrade:\n");
+	scanf("%d",&tempC);
+	tempf=9*(tempC/5)+32;
+	printf("Temperature in Farenheit:%d",tempf);
+}
+
