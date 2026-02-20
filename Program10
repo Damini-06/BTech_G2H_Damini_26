@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <ctype.h>
+int main() {
+    int a,b,c,d,e,t,sum;
+    double pct;
+	printf("Enter five subject's marks:\n");
+	printf("Enter total marks:\n");
+	scanf("%d",&t);
+	scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+	sum=a+b+c+d+e;
+	pct=sum/5.0;
+	
+	if(pct>=90)
+	{
+	    printf("Grade=A");
+	}
+	else if(pct>=80 && pct<90)
+	{
+	    printf("Grade=B");
+	}
+	else if(pct>=60 && pct<80)
+	{
+	    printf("Grade=C");
+	}
+	else
+	{
+	    printf("Grade=D");
+	}
+}
+
