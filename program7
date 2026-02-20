@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,ans;
+    char c;
+	printf("Enter two numbers:\n");
+	scanf("%d %d",&a,&b);
+	printf("Enter the operator:\n");
+	scanf(" %c",&c);
+	
+	switch(c)
+	{
+	    case '+': 
+	    ans=a+b;
+	    break;
+	    
+	    case '-':
+	    ans=a-b;
+	    break;
+	    
+	    case '*':
+	    ans=a*b;
+	    break;
+	    
+	    case '/':
+	    ans=a/b;
+	    break;
+	  
+	}
+	
+	printf( "%d",ans);
+}
+
