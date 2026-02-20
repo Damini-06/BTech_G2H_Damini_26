@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <ctype.h>
+int main() {
+    int a,sum=0;
+	printf("Enter the number:\n");
+	scanf("%d",&a);
+	while(a>0)
+	{
+	    sum+=a;
+	    a--;
+	}
+	printf("%d",sum);
+}
+
