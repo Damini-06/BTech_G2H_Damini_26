@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int a,digits;
+	printf("Enter the number:\n");
+	scanf("%d",&a);
+	while(a>0)
+	{
+	    digits++;
+	    a=a/10;
+	}
+	int arm=0;
+	while(a>0)
+	{
+	    arm+=pow(a%10,digits);
+	    a=a/10;
+	}
+	if (arm==a) printf("Armstrong");
+	else printf("not armstrong");
+	
+}
+
+
+
+
+
+
