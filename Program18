@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int a,sumE=0,sumO=0;
+	printf("Enter the number:\n");
+	scanf("%d",&a);
+	int rev=0;
+	while(a>0)
+	{
+	    int d=a%10;
+	    rev=rev*10+d;
+	    a=a/10;
+	}
+	printf("%d",rev);
+}
+
+
+
+
+
+
