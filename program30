@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    int r,c;
+	printf("Enter number of rows and columns:\n");
+	scanf("%d %d",&r,&c);
+	
+	int a[r][c];
+	int b[r][c];
+	int sum[r][c];
+	printf("Enter element of 1st array:");
+	for(int i=0;i<r;i++)
+	{
+	    for(int j=0;j<c;j++)
+	    {
+	        scanf("%d",&a[i][j]);
+	    }
+	}
+	
+	printf("Enter element of 2nd array:");
+	for(int i=0;i<r;i++)
+	{
+	    for(int j=0;j<c;j++)
+	    {
+	        scanf("%d",&b[i][j]);
+	        sum[i][j] = a[i][j]+b[i][j];
+	    }
+	}
+	
+	printf("Sum Array is:\n");
+	for(int i=0;i<r;i++)
+	{
+	    for(int j=0;j<c;j++)
+	    {
+	        printf("%d ",sum[i][j]);
+	    }
+	    printf("\n");
+	}
+}
+
