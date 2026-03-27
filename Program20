@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main() {
+    int decimal, binary[32], i = 0;
+
+    printf("Enter a decimal number: \n");
+    scanf("%d", &decimal);
+
+    
+    if (decimal == 0) 
+    {
+        printf("Binary: 0\n");
+        return 0;
+    }
+
+    while (decimal > 0) 
+    {
+        binary[i++] = decimal % 2;
+        decimal /= 2;
+    }
+
+    printf("Binary equivalent: ");
+    for (int j = i - 1; j >= 0; j--) 
+    {
+        printf("%d", binary[j]);
+    }
+    
+    printf("\n");
+    
+    long long binary_val;
+    int decimal_val = 0, base = 1, rem;
+
+    printf("Enter a binary number:\n ");
+    scanf("%lld", &binary_val);
+
+
+    while (binary_val > 0) 
+    {
+        rem = binary_val % 10;          
+        decimal_val = decimal_val + rem * base; 
+        binary_val = binary_val / 10;   
+        base = base * 2;                 
+    }
+
+    
+    printf("Its decimal equivalent is = %d\n", decimal_val);
+
+
+}
