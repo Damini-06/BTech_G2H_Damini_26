@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+	char str[100]; int count=0;
+	printf("Enter String:\n");
+	gets(str);
+	for(int i=0;i<100;i++)
+	{
+	    if(str[i]=='\0')
+	    {
+	       break;
+	    }
+	    count++;
+	}
+	printf("Length of String is:%d",count);
+}
+
