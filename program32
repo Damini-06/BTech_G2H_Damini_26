@@ -1,0 +1,41 @@
+#include <stdio.h>
+int main() {
+    int r,c,sumr,sumc;
+	printf("Enter no. of rows and columns:\n");
+	scanf("%d %d",&r,&c);
+	int a[r][c];
+	
+	printf("Enter elements of matrix:\n");
+	for(int i=0;i<r;i++)
+	{
+	    for(int j=0;j<c;j++)
+	    {
+	        scanf("%d",&a[i][j]);
+	    }
+	}
+	
+	int i=0;
+	int j=0;
+	while(i<r)
+	{
+	    sumr=0;
+	    for(int j=0;j<c;j++)
+	    {
+	        sumr+=a[i][j];
+	    }
+	    i++;
+	    printf("Sum of row %d is %d \n",i,sumr);
+	}
+	
+	while(j<c)
+	{
+	    sumc=0;
+	    for(int i=0;i<r;i++)
+	    {
+	        sumc+=a[i][j];
+	    }
+	    j++;
+	    printf("Sum of column %d is %d \n",j,sumc);
+	}
+}
+
